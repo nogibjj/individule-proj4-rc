@@ -2,7 +2,7 @@
 This guide details the steps to build an auto-scaling web application utilizing GitHub, Docker, and Microsoft Azure App Services.
 
 ## Instructional Video
-For a visual walkthrough, check out the tutorial video: [Tutorial Video](https://youtu.be/5g7VKcxG7nw).
+For a visual walkthrough, check out the tutorial video: [Tutorial Video](https://prodduke.sharepoint.com/:v:/s/Fall-2023-IDS-706-Data-Engineering/EWneUMT98hJJmoOWYGtxX40BrwIJKzeYKBCAWhXRjUhqQg?e=lLx6lK&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D).
 
 ## Procedure
 1. **Environment Setup**: Use GitHub Code Spaces and VScode to prepare your working environment. Start by developing a basic web interface with HTML and CSS.
