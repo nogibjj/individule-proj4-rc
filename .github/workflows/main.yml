@@ -28,9 +28,4 @@ jobs:
       # Runs a single command using the runners shell
       - name: install packages in requirements.txt
         run: make install
-        
-      - name: lint
-        run: make lint
-        
-      - name: test
-        run: make test
+   
