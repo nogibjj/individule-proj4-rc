@@ -1,25 +1,36 @@
-[![CI](https://github.com/Jason-Guo1999/IDS706-Python-Template/actions/workflows/main.yml/badge.svg)](https://github.com/Jason-Guo1999/IDS706-Python-Template/actions/workflows/main.yml)
+# Azure-Flask-App
 
+# Auto-Scaling Web Application Guide
+This guide details the steps to build an auto-scaling web application utilizing GitHub, Docker, and Microsoft App Services.
 
-# IDS 706 Data Engineering Python GitHub Template
+## Instructional Video
+For a visual walkthrough, check out the tutorial video: [Tutorial Video](https://youtu.be/5g7VKcxG7nw).
 
-This repository contains a Python GitHub template designed specifically for IDS 706 Data Engineering projects. It includes several key components structured to streamline project setup and development.
+## Procedure
+1. **Environment Setup**: Use GitHub Code Spaces and VScode to prepare your working environment. Start by developing a basic web interface with HTML and CSS.
 
-## Features
+2. **Flask Application**: Create a simple Flask application (ensure to include host and port number) as shown in 'app.py'.
+   ![Flask App Setup](1.png)
 
-- `Makefile`: Contains commands and tools for building and managing the project.
-- `requirements.txt`: Lists all dependencies necessary for the project.
-- `.devcontainer`: 
-  - `Dockerfile`: Specifies Docker configurations.
-  - `devcontainer.json`: Integrates with Visual Studio Code extension for enhanced development environment.
-- `.gitignore`: Configures files and directories to be excluded from Git version control.
-- `GitHub Actions`: 
-  - `workflows`: Enables automated Continuous Integration and Continuous Deployment (CI/CD) for the project.
+3. **Docker File Creation**: 
+   Commands for Docker:
+   - `docker build -t app-name .`
+   - `docker run -p 5000:5000 app-name`
 
-## Usage
+4. **Docker Hub Login and Container Management**:
+   - Log in to Docker Hub using `docker login --username=zhichenguo`.
+   - Build and push the container to DockerHub with the following commands:
+     - `docker build -t zhichenguo/repo .`
+     - `docker push zhichenguo/repo`
+   ![Docker Hub Management](2.png)
 
-Refer to individual files for specific usage instructions and configurations.
+5. **Azure App Services Setup**: Initialize the application using Azure App Services and configure a Docker hub resource.
 
-## Contributing
+6. **Deployment and Configuration**: Post-deployment, navigate to the configuration settings and add "WEBSITES_PORT" with a value of 5000. This setting enables the app to be accessible via the Azure-provided public URL.
 
-Contributions to improve the template are welcome. Please adhere to the project's contribution guidelines.
+## Outcome
+- **Configured Website Port**: 
+  ![Website Port Configuration](3.png)
+
+- **Accessible Public URL**: 
+  ![Public URL Display](4.png)
